@@ -1105,7 +1105,7 @@ def login1():
         lbl_hora.configure(text=agora.strftime("Data: %d/%m/%Y  Hora: %H:%M:%S"))
         if _img_psi[0] is None:
             try:
-                _img_psi[0] = ctk.CTkImage(Image.open("assets/psi.png"), size=(511, 509))
+                _img_psi[0] = ctk.CTkImage(Image.open("tia-main/assets/psi.png"), size=(511, 509))
                 ctk.CTkLabel(frm_vg, image=_img_psi[0], text="").place(x=625, y=100)
             except Exception:
                 pass
@@ -1148,7 +1148,7 @@ ctk.CTkFrame(loginwin, width=460, height=160, corner_radius=0,
             border_width=1).place(x=10, y=10)
 
 try:
-    _img1 = ctk.CTkImage(Image.open("assets/homem_cadeado.png"), size=(115, 110))
+    _img1 = ctk.CTkImage(Image.open("tia-main/assets/homem_cadeado.png"), size=(115, 110))
     ctk.CTkLabel(loginwin, image=_img1, text="").place(x=30, y=35)
 except Exception:
     pass
@@ -1176,7 +1176,7 @@ ctk.CTkFrame(loginwin, width=134, height=110, corner_radius=0,
             border_width=1).place(x=325, y=34)
 
 try:
-    _img2 = ctk.CTkImage(Image.open("assets/certo.png"), size=(30, 30))
+    _img2 = ctk.CTkImage(Image.open("tia-main/assets/certo.png"), size=(30, 30))
     btn1  = ctk.CTkButton(loginwin, image=_img2, text="Acessar",
                         compound="left", fg_color="#fafffe",
                         border_color="#a0a0a0", border_width=1,
@@ -1192,7 +1192,7 @@ except Exception:
 btn1.place(x=340, y=45)
 
 try:
-    _img3 = ctk.CTkImage(Image.open("assets/passar.png"),
+    _img3 = ctk.CTkImage(Image.open("tia-main/assets/passar.png"),
         size=(30, 30))
     btn2 = ctk.CTkButton(loginwin, image=_img3, text="Sair",
                         compound="left", fg_color="#fafffe",
